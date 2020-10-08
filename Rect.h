@@ -24,7 +24,7 @@ class PredRectDistFromXY {
 			((_x - r1.getx()) * (_x - r1.getx())) +
 			((_y - r1.gety()) * (_y - r1.gety()))
 		);
-	}
+	}//в метод класса –ект
 
 public:
 	PredRectDistFromXY(int x = 0, int y = 0) : _x(x), _y(y) {}

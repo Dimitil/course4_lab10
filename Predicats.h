@@ -49,7 +49,7 @@ public:
 	}
 };
 
-std::string tolowerPred(std::string& s)
+std::string tolowerPred(std::string s)
 {
 	std::transform(s.begin(), s.end(), s.begin(), tolower);
 	return s;

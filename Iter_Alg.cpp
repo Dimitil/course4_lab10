@@ -199,7 +199,8 @@ int _tmain(int argc, _TCHAR* argv[])
 		//При этом порядок строк в исходном векторе менять не нужно!
 		std::ostream_iterator<std::string> osis(std::cout, "\n");
 		
-		for (char ch = 'A'; ch < 'Z'; ++ch)
+		std::cout << '\n';
+		for (char ch = 'A'; ch <= 'Z'; ++ch)
 		{
 			copy_if(vecStr.begin(), vecStr.end(), osis, myStrCompare(ch));
 		}
@@ -222,7 +223,7 @@ int _tmain(int argc, _TCHAR* argv[])
 
 		std::map<string, int> notEvenMonth;
 		mapInserter = inserter(notEvenMonth, notEvenMonth.begin());
-		std::copy_if(month.begin(), month.end(), mapInserter, notEvenMonthPred);
+		std::copy_if(month.begin(), month.end(), mapInserter, notEvenMonthPred); 
 
 
 		stop
